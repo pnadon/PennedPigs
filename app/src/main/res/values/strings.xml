@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Penned Pigs</string>
+    //GameBoardScreen
+    <string name="your_turn">Your turn</string>
+    <string name="player_1">Player 1</string>
+    <string name="player_2">Player 2</string>
+    <string name="undos_left">Undos Left</string>
+
+    //Navigation
+    <string name="home">Home</string>
+    <string name="back">Back</string>
+    <string name="help">Help</string>
+
+    //Main Menu
+    <string name="continue_button">Continue</string>
+    <string name="new_game">New Game</string>
+
+    //Titles
+    <string name="game_name">Penned Pigs</string>
+    <string name="team_name">Cache Hogs</string>
+    <string name="scoreboard">ScoreBoard</string>
+
+    //Setup
+    <string name="undo_slider">Number of Undos</string>
+    <string name="setup_size_slider">Size</string>
+    <string name="setup_difficulty_slider">Difficulty</string>
+    <string name="frenzy_mode">Frenzy Mode</string>
+
+    //Options
+    <string name="delete">Delete</string>
+    <string name="delete_confirm">Are you sure you want to delete everything?</string>
+
+    //Results
+    <string name="who_won_place_holder">Someone\nWon</string>
+    <string name="scores_label">Scores: </string>
+    <string name="score_results_placeholder">ScoreTBD</string>
+    <string name="results_name_prompt">Enter your name here!</string>
+    <string name="add_to_scoreboard">Submit</string>
+    <string name="share_score">Share</string>
+    <string name="new_game_from_results">Play Again</string>
+
+    //ScoreBoard
+    <string name="score_name_label">Name</string>
+    <string name="score_score_label">Score</string>
+    <string name="score_date_label">Date</string>
+
+    //AboutUs
+    <string name="about_us">
+        Thank you for using our app! We are the Cache Hogs team, which consists of three Computing
+        Science students who were contracted to make this app as part of a course in Software
+        Engineering.
+        \n\n
+        Our goal in making this app was to deliver a quality Android app which met our client\'s
+        needs, while also learning about the many steps of Software Engineering.
+        \n\n
+        We have enjoyed the journey we have taken in making this app, and we hope that you enjoy
+        playing it! Please keep in mind that this app still has bugs, and may not behave optimally.
+    </string>
+    <string name="signature">-Cache Hogs</string>
+
+</resources>

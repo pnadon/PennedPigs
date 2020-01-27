@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".activities.FrenzyModeActivity">
+
+    <Button
+        android:id="@+id/defaultButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/ic_new_default_button"
+        android:onClick="defaultButton"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/prePlacedLinesButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_new_preplaced_button"
+        android:onClick="prePlacedButton"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/PlayGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/defaultButton" />
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_back_button"
+        android:foreground="@drawable/ic_back_button"
+        android:onClick="backButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/PlayGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_play"
+        android:onClick="playGameButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/classicGameModeDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="The Classic\nGamemode"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/defaultButton"
+        app:layout_constraintEnd_toStartOf="@+id/defaultButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/defaultButton" />
+
+    <TextView
+        android:id="@+id/RandomLinesDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Random Lines\nPlaced On\nBoard"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/prePlacedLinesButton"
+        app:layout_constraintEnd_toStartOf="@+id/prePlacedLinesButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/prePlacedLinesButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

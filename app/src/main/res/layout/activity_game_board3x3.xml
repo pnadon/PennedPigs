@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.GameActivity">
+
+    <TextView
+        android:id="@+id/undoCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="@string/undos_left"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="@+id/undoButton"
+        app:layout_constraintEnd_toEndOf="@+id/undoButton" />
+
+    <TextView
+        android:id="@+id/turnIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/your_turn"
+        android:textColor="@color/colorText"
+        android:textSize="30sp"
+        android:translationZ="0sp"
+        app:layout_constraintBottom_toTopOf="@+id/location01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player1Score"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:background="@color/colorPink"
+        android:gravity="center_horizontal"
+        android:text="@string/player_1"
+        android:textColor="@color/colorText"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Hori00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnIndicator" />
+
+    <TextView
+        android:id="@+id/player2Score"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorBlue"
+        android:gravity="center_horizontal"
+        android:text="@string/player_2"
+        android:textColor="@color/colorText"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Hori01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnIndicator" />
+
+    <Button
+        android:id="@+id/undoButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimary"
+        android:foreground="@drawable/ic_undo"
+        android:onClick="UndoButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_options"
+        android:onClick="OptionsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Vert01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_line"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/location11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/Vert02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/ic_line"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/location12"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/Vert12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/ic_line"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location12"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/Vert10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/ic_line"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location10"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/Vert00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_line"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/location10"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/Vert11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_line"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location11"
+        tools:visibility="invisible" />
+
+
+    <ImageView
+        android:id="@+id/Hori00"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ic_hori_line"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/pen00"
+        app:layout_constraintEnd_toStartOf="@+id/location01"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/location00"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/Hori01"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ic_hori_line"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/pen01"
+        app:layout_constraintEnd_toStartOf="@+id/location02"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/location01"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/Hori10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_hori_line"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/location11"
+        app:layout_constraintStart_toEndOf="@+id/location10"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/Hori11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_hori_line"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/location12"
+        app:layout_constraintStart_toEndOf="@+id/location11"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/Hori21"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_hori_line"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/location22"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/location21"
+        app:layout_constraintTop_toBottomOf="@+id/pen11"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/Hori20"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_hori_line"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/location21"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/location20"
+        app:layout_constraintTop_toBottomOf="@+id/pen10"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/pen11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/Vert12"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toEndOf="@+id/Vert11"
+        app:layout_constraintTop_toBottomOf="@+id/Hori11"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/pen10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/Vert11"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toEndOf="@+id/Vert10"
+        app:layout_constraintTop_toBottomOf="@+id/Hori10"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/pen01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/Hori11"
+        app:layout_constraintEnd_toStartOf="@+id/Vert02"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toEndOf="@+id/Vert01"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/pen00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/Hori10"
+        app:layout_constraintEnd_toStartOf="@+id/Vert01"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toEndOf="@+id/Vert00"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        tools:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/location00"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/buttonBackground"
+        android:foreground="@mipmap/dot_foreground"
+        android:onClick="receiveButtonClick"
+        android:tag="00"
+        app:layout_constraintBottom_toTopOf="@+id/Vert00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/dot_foreground" />
+
+
+    <ImageButton
+        android:id="@+id/location01"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/buttonBackground"
+        android:foreground="@mipmap/dot_foreground"
+        android:onClick="receiveButtonClick"
+        android:tag="01"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/Vert01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/dot_foreground" />
+
+    <ImageButton
+        android:id="@+id/location02"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/buttonBackground"
+        android:foreground="@mipmap/dot_foreground"
+        android:onClick="receiveButtonClick"
+        android:tag="02"
+        app:layout_constraintBottom_toTopOf="@+id/Vert02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/dot_foreground" />
+
+    <ImageButton
+        android:id="@+id/location10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/buttonBackground"
+        android:foreground="@mipmap/dot_foreground"
+        android:onClick="receiveButtonClick"
+        android:tag="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/dot_foreground" />
+
+    <ImageButton
+        android:id="@+id/location11"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/buttonBackground"
+        android:foreground="@mipmap/dot_foreground"
+        android:onClick="receiveButtonClick"
+        android:tag="11"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/dot_foreground" />
+
+    <ImageButton
+        android:id="@+id/location12"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/buttonBackground"
+        android:foreground="@mipmap/dot_foreground"
+        android:onClick="receiveButtonClick"
+        android:tag="12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/dot_foreground" />
+
+
+    <ImageButton
+        android:id="@+id/location20"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/buttonBackground"
+        android:foreground="@mipmap/dot_foreground"
+        android:onClick="receiveButtonClick"
+        android:tag="20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Vert10"
+        app:srcCompat="@mipmap/dot_foreground" />
+
+
+    <ImageButton
+        android:id="@+id/location21"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/buttonBackground"
+        android:foreground="@mipmap/dot_foreground"
+        android:onClick="receiveButtonClick"
+        android:tag="21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Vert11"
+        app:srcCompat="@mipmap/dot_foreground" />
+
+
+    <ImageButton
+        android:id="@+id/location22"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/buttonBackground"
+        android:foreground="@mipmap/dot_foreground"
+        android:onClick="receiveButtonClick"
+        android:tag="22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Vert12"
+        app:srcCompat="@mipmap/dot_foreground" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

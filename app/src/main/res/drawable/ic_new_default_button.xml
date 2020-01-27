@@ -1,0 +1,39 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="121dp"
+    android:viewportWidth="120"
+    android:viewportHeight="121">
+  <path
+      android:pathData="M120,29.998C120,13.44 106.557,-0.002 90,-0.002L30,-0.002C13.442,-0.002 -0,13.44 -0,29.998L-0,90.681C-0,107.239 13.442,120.681 30,120.681L90,120.681C106.557,120.681 120,107.239 120,90.681L120,29.998Z"
+      android:fillColor="#6AA33F"/>
+  <group>
+    <clip-path android:pathData="M120,29.998C120,13.44 106.557,-0.002 90,-0.002L30,-0.002C13.442,-0.002 -0,13.44 -0,29.998L-0,90.681C-0,107.239 13.442,120.681 30,120.681L90,120.681C106.557,120.681 120,107.239 120,90.681L120,29.998Z M 0,0"/>
+    <path
+        android:pathData="M23.25,23.587m-5.25,0a5.25,5.25 90,1 1,10.5 0a5.25,5.25 90,1 1,-10.5 0"
+        android:fillColor="#ffffff"/>
+    <path
+        android:pathData="M60,23.587m-5.25,0a5.25,5.25 90,1 1,10.5 0a5.25,5.25 90,1 1,-10.5 0"
+        android:fillColor="#ffffff"/>
+    <path
+        android:pathData="M96.75,23.587m-5.25,0a5.25,5.25 90,1 1,10.5 0a5.25,5.25 90,1 1,-10.5 0"
+        android:fillColor="#ffffff"/>
+    <path
+        android:pathData="M23.25,60.337m-5.25,0a5.25,5.25 90,1 1,10.5 0a5.25,5.25 90,1 1,-10.5 0"
+        android:fillColor="#ffffff"/>
+    <path
+        android:pathData="M60,60.337m-5.25,0a5.25,5.25 90,1 1,10.5 0a5.25,5.25 90,1 1,-10.5 0"
+        android:fillColor="#ffffff"/>
+    <path
+        android:pathData="M96.75,60.337m-5.25,0a5.25,5.25 90,1 1,10.5 0a5.25,5.25 90,1 1,-10.5 0"
+        android:fillColor="#ffffff"/>
+    <path
+        android:pathData="M23.25,97.086m-5.25,0a5.25,5.25 90,1 1,10.5 0a5.25,5.25 90,1 1,-10.5 0"
+        android:fillColor="#ffffff"/>
+    <path
+        android:pathData="M60,97.086m-5.25,0a5.25,5.25 90,1 1,10.5 0a5.25,5.25 90,1 1,-10.5 0"
+        android:fillColor="#ffffff"/>
+    <path
+        android:pathData="M96.75,97.086m-5.25,0a5.25,5.25 90,1 1,10.5 0a5.25,5.25 90,1 1,-10.5 0"
+        android:fillColor="#ffffff"/>
+  </group>
+</vector>
