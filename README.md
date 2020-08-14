@@ -3,7 +3,7 @@ Repository for the Penned Pigs game.
 
 - **Note**: If you are viewing this repository to see examples of my work, please look at files which explicitly state me as the only author. Most other files were a collaborative effort and thus might not represent my own work.
 
-## Directories containing most of my work:
+## Directories containing most of my (Philippe Nadon) work:
 
 - [datastructures](https://github.com/pnadon/PennedPigs/tree/master/app/src/main/java/com/example/piggiesteam5/datastructures)
 - [datamanagement](https://github.com/pnadon/PennedPigs/tree/master/app/src/main/java/com/example/piggiesteam5/datamanagement)
